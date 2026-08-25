@@ -693,7 +693,13 @@ do
   ---@type table<string, vim.lsp.Config>
   local servers = {
     -- clangd = {},
-    -- gopls = {},
+    gopls = {
+      settings = {
+        gopls = {
+          directoryFilters = { '-.claude/worktrees' },
+        },
+      },
+    },
     -- pyright = {},
     -- rust_analyzer = {},
     --
