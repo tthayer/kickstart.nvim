@@ -1,4 +1,3 @@
-return {
-    "terrortylor/nvim-comment",
-    config = function() require("nvim_comment").setup() end
-}
+-- Toggle comments with `gc` (operator) and `gcc` (line).
+vim.pack.add { 'https://github.com/terrortylor/nvim-comment' }
+require('nvim_comment').setup()
